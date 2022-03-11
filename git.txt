@@ -1,0 +1,28 @@
+git init
+//sirve para mostrar el estado actual de mi proyecto
+$git status
+//sirve para agregar todos los cambios y archivos al STAGE
+git add .
+git add nombrearchivo
+//sirve para guardar los cambios y necesariamente necesita un mensaje
+git commit -m "mensaje"
+//sirve para mostrar los commits existentes en ese proyecto
+git log
+//ver la rama actual
+git branch
+//añadir origen remoto
+git remote add origin url_github.git
+//verificar origentes remotos
+git remote -v
+//hacer un push
+git push origin nombre_rama
+
+
+
+
+//1. creo el par de llaves, publica y privada
+ssh-keygen -t rsa -b 4096 -C "sucorreo"
+//2. quiero ver si el proceso para verificar llaves esta funcionando
+eval $(ssh-agent - s)
+//3. verificar mi identidad y añadirla a mi computadora
+ssh-add ~/.ssh/id_rsa
